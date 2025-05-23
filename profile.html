@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Facebook Lite - Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo" onclick="location.href='newsfeed.html'">FB Lite</div>
+    <form class="search-form" onsubmit="event.preventDefault(); alert('Search not implemented');">
+      <input type="search" placeholder="Search" />
+    </form>
+    <div class="nav-links">
+      <a href="profile.html" class="active">Profile</a>
+      <a href="market.html">Marketplace</a>
+    </div>
+  </nav>
+
+  <div class="main-layout">
+    <aside class="sidebar">
+      <a href="profile.html" class="active">Profile</a>
+      <a href="newsfeed.html">News Feed</a>
+      <a href="market.html">Marketplace</a>
+      <a href="friends.html">Friends</a>
+        <a href="login.html">Logout</a>
+    </aside>
+
+    <main class="content-area">
+      <div class="profile-header">
+        <img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/484828093_2740111239710657_5541789240731640152_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeE8AhL1twHQilSm_lv2MS-1V-y-ibMYPjtX7L6Jsxg-O6M9dOwC6jazD9ds6spWH9q7SZJ2LwOQXZZkPQ1M1LWb&_nc_ohc=m5vamGoiUfUQ7kNvwF8vNFa&_nc_oc=AdlIGvNpF5I4ZvGAbqU397h4-a604brEnyDy4Sk-i5W5x_ptoP-S6ANq1JfNS7HleAk&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_gid=XifWt6xA9EzLJ_70YRbBVw&oh=00_AfJ5d3h1eaZ3rk7aO5VYEPVpMX90VjCOWODLax82iZY4Sw&oe=6836725D" alt="Cover Photo" class="cover-photo" />
+        <img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/305235455_2029041167484338_437213194012934899_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGgd4-9VppvMmYM92xoId_1CoznRm3UQyMKjOdGbdRDI90ZiDhIjOtlP--sm4RluuaWYdG2jSlUaH6z3QsS7Ijq&_nc_ohc=Q4nF33ouZP0Q7kNvwE0lEct&_nc_oc=Adko2QhCue5ak1eFdoPcqy6fyo5-cns2zaG36qOVJ0qN6FnD1Cz7yYAmA1eTl-fi0DE&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=jPzQxl4g-FyRa-ET7uy3tA&oh=00_AfIdYRLQiFRwl_vDuqsDD47F9zHEv6z66KrZW1qXW1QuHQ&oe=68367B98" alt="Profile Photo" class="profile-photo" />
+      </div>
+      <h1 class="profile-name">Brian Lim</h1>
+
+      <section class="profile-section about">
+        <h3>About</h3>
+        <p>Software developer. Loves hiking, photography, and coffee.</p>
+      </section>
+
+      <section class="profile-section friends">
+        <h3>Friends</h3>
+        <div class="friends-list">
+          <div class="friend">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Friend 1" />
+          </div>
+          <div class="friend">
+            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Friend 2" />
+          </div>
+          <div class="friend">
+            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Friend 3" />
+          </div>
+        </div>
+      </section>
+
+      <section class="profile-section photos">
+        <h3>Photos</h3>
+        <div class="photo-thumbnails">
+          <img src="https://picsum.photos/100?random=10" alt="Photo 1" />
+          <img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/484828093_2740111239710657_5541789240731640152_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeE8AhL1twHQilSm_lv2MS-1V-y-ibMYPjtX7L6Jsxg-O6M9dOwC6jazD9ds6spWH9q7SZJ2LwOQXZZkPQ1M1LWb&_nc_ohc=m5vamGoiUfUQ7kNvwF8vNFa&_nc_oc=AdlIGvNpF5I4ZvGAbqU397h4-a604brEnyDy4Sk-i5W5x_ptoP-S6ANq1JfNS7HleAk&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_gid=XifWt6xA9EzLJ_70YRbBVw&oh=00_AfJ5d3h1eaZ3rk7aO5VYEPVpMX90VjCOWODLax82iZY4Sw&oe=6836725D" alt="Photo 2" />
+          <img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/305235455_2029041167484338_437213194012934899_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGgd4-9VppvMmYM92xoId_1CoznRm3UQyMKjOdGbdRDI90ZiDhIjOtlP--sm4RluuaWYdG2jSlUaH6z3QsS7Ijq&_nc_ohc=Q4nF33ouZP0Q7kNvwE0lEct&_nc_oc=Adko2QhCue5ak1eFdoPcqy6fyo5-cns2zaG36qOVJ0qN6FnD1Cz7yYAmA1eTl-fi0DE&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=jPzQxl4g-FyRa-ET7uy3tA&oh=00_AfIdYRLQiFRwl_vDuqsDD47F9zHEv6z66KrZW1qXW1QuHQ&oe=68367B98" alt="Photo 3" />
+          <img src="https://picsum.photos/100?random=13" alt="Photo 4" />
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+

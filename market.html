@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Facebook Lite - Marketplace</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo" onclick="location.href='newsfeed.html'">FB Lite</div>
+    <form class="search-form" onsubmit="event.preventDefault(); alert('Search not implemented');">
+      <input type="search" placeholder="Search Marketplace" />
+    </form>
+    <div class="nav-links">
+      <a href="profile.html">Profile</a>
+      <a href="market.html" class="active">Marketplace</a>
+    </div>
+  </nav>
+
+  <div class="main-layout">
+    <aside class="sidebar">
+      <a href="profile.html">Profile</a>
+      <a href="newsfeed.html">News Feed</a>
+      <a href="marketplace.html" class="active">Marketplace</a>
+      <a href="friends.html">Friends</a>
+          <a href="login.html">Logout</a>
+    </aside>
+
+    <main class="content-area">
+      <h2>Marketplace</h2>
+      <div class="marketplace-grid">
+        <div class="marketplace-item">
+          <img src="https://images.thdstatic.com/productImages/1c4f9228-54e3-419b-a716-1a0d7208908a/svn/greens-bikes-jinxbike4-64_600.jpg" alt="Bike" />
+          <div class="title">Bike</div>
+          <div class="price">P200</div>
+        </div>
+        <div class="marketplace-item">
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&h=200&q=80" alt="Laptop" />
+          <div class="title">Laptop</div>
+          <div class="price">P800</div>
+        </div>
+        <div class="marketplace-item">
+          <img src="https://mandauefoam.ph/cdn/shop/files/116619BexleyGlassTopCoffeeTable-Walnut.png?v=1745486555&width=900" alt="Coffee Table" />
+          <div class="title">Coffee Table</div>
+          <div class="price">P50</div>
+        </div>
+        <div class="marketplace-item">
+          <img src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg" alt="Headphones" />
+          <div class="title">Headphones</div>
+          <div class="price">P120</div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

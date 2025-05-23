@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Facebook Lite - News Feed</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo" onclick="location.href='newsfeed.html'">FB Lite</div>
+    <form class="search-form" onsubmit="event.preventDefault(); alert('Search not implemented');">
+      <input type="search" placeholder="Search" />
+    </form>
+    <div class="nav-links">
+      <a href="profile.html">Profile</a>
+      <a href="market.html">Marketplace</a>
+    </div>
+  </nav>
+
+  <div class="main-layout">
+    <aside class="sidebar">
+      <a href="profile.html">Profile</a>
+      <a href="newsfeed.html" class="active">News Feed</a>
+      <a href="market.html">Marketplace</a>
+      <a href="friends.html">Friends</a>
+          <a href="login.html">Logout</a>
+    </aside>
+
+    <main class="content-area">
+      <h2>News Feed</h2>
+
+      <article class="post">
+        <strong>John Doe</strong><span class="time">2 hrs ago</span>
+        <p>Just went hiking! Loving the views.</p>
+      </article>
+
+      <article class="post">
+        <strong>Jane Smith</strong><span class="time">5 hrs ago</span>
+        <p>Excited for the weekend!</p>
+      </article>
+
+      <article class="post">
+        <strong>Alex Johnson</strong><span class="time">1 day ago</span>
+        <p>Check out this cool photo!</p>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

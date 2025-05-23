@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Facebook Lite - Marketplace</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo" onclick="location.href='newsfeed.html'">FB Lite</div>
+    <form class="search-form" onsubmit="event.preventDefault(); alert('Search not implemented');">
+      <input type="search" placeholder="Search Marketplace" />
+    </form>
+    <div class="nav-links">
+      <a href="profile.html">Profile</a>
+      <a href="market.html" class="active">Marketplace</a>
+    </div>
+  </nav>
+
+  <div class="main-layout">
+    <aside class="sidebar">
+      <a href="profile.html">Profile</a>
+      <a href="newsfeed.html">News Feed</a>
+      <a href="market.html">Marketplace</a>
+      <a href="friends.html" class="active">Friends</a>
+          <a href="login.html">Logout</a>
+    </aside>
+
+    <main class="content-area">
+      <h2>Friends Name and Age</h2>
+      <div class="marketplace-grid">
+        <div class="marketplace-item">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Bike" />
+          <div class="title">John Doe</div>
+          <div class="price">29 yrs old</div>
+        </div>
+        <div class="marketplace-item">
+          <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Laptop" />
+          <div class="title">Alex Johnson</div>
+          <div class="price">29 yrs old</div>
+        </div>
+        <div class="marketplace-item">
+          <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Coffee Table" />
+          <div class="title">Mary Lee</div>
+          <div class="price">29 yrs old</div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

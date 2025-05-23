@@ -1,0 +1,342 @@
+/* styles.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5; /* facebook-gray */
+  color: #050505; /* facebook-dark */
+  min-height: 100vh;
+}
+
+/* Links */
+a {
+  color: #1877f2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button, .btn {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+button:hover, .btn:hover {
+  background-color: #155db2;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+  padding: 10px;
+  border: 1px solid #ccd0d5;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus {
+  outline: none;
+  border-color: #1877f2;
+  box-shadow: 0 0 4px #1877f2;
+}
+
+/* Container centers content */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+nav.navbar {
+  background-color: #1877f2;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav.navbar .logo {
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav.navbar form.search-form {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+nav.navbar form.search-form input[type="search"] {
+  width: 100%;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+nav.navbar .nav-links a {
+  color: white;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Layout for pages with sidebar */
+.main-layout {
+  display: flex;
+  min-height: calc(100vh - 60px);
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  border-right: 1px solid #ccd0d5;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar a {
+  color: #050505;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar a:hover {
+  background-color: #f0f2f5;
+}
+
+.sidebar a.active {
+  font-weight: 700;
+  color: #1877f2;
+  background-color: #e7f3ff;
+}
+
+/* Content area */
+.content-area {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Login page */
+.login-box {
+  background: white;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 24px;
+  color: #1877f2;
+}
+
+.login-box form {
+  text-align: left;
+}
+
+.login-box .links {
+  margin-top: 16px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* News Feed posts */
+.post {
+  background: white;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.post strong {
+  font-size: 16px;
+}
+
+.post .time {
+  font-size: 12px;
+  color: #666;
+  margin-left: 8px;
+}
+
+.post p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* Profile page */
+.cover-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  position: relative;
+  top: -75px;
+  left: 20px;
+  background: #ccc;
+}
+
+.profile-header {
+  position: relative;
+  margin-bottom: -60px;
+}
+
+.profile-name {
+  margin-left: 190px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Profile sections */
+.profile-section {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.profile-section h3 {
+  margin-bottom: 12px;
+}
+
+.friends-list {
+  display: flex;
+  gap: 12px;
+}
+
+.friend {
+  text-align: center;
+}
+
+.friend img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 6px;
+}
+
+.photo-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.photo-thumbnails img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Marketplace */
+.marketplace-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+  gap: 16px;
+}
+
+.marketplace-item {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 12px;
+  text-align: center;
+}
+
+.marketplace-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.marketplace-item .title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.marketplace-item .price {
+  color: #1877f2;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccd0d5;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  .sidebar a {
+    flex: 1;
+    text-align: center;
+    padding: 12px 6px;
+    white-space: nowrap;
+  }
+  .profile-name {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .profile-photo {
+    position: static;
+    display: block;
+    margin: -75px auto 10px auto;
+  }
+}
